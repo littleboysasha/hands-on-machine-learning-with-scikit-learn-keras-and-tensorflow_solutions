@@ -146,11 +146,25 @@
 
   17. What is the purpose of a validation set?<next-line>
 
+  To select the best model.
+
   \;
 
   18. What can go wrong if you tune hyperparameters using the test
-  set?<next-line>19. What is repeated cross-validation and why would you
-  prefer it to using a single<next-line>validation set?<next-line>
+  set?<next-line>
+
+  The model may work badly when put into production.
+
+  \;
+
+  19. What is repeated cross-validation and why would you prefer it to using
+  a single<next-line>validation set?<next-line>
+
+  Each model is evaluated once per validation set, after it is trained on the
+  rest of the data.<next-line>
+
+  By averaging out all the evaluations of a model, we get a much more
+  accurate measure of its performance.<next-line>
 </body>
 
 <\initial>
